@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppButton" parent="@android:style/TextAppearance.Small">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:background">#F08C35</item>
+        <item name="android:width">200dp</item>
+        <item name="android:height">50dp</item>
+        <item name="android:layout_margin">7dp</item>
+    </style>
+</resources>

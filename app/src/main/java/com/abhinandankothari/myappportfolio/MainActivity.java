@@ -8,6 +8,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,6 +21,50 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        final Button button1 = (Button) findViewById(R.id.button1);
+        final Button button2 = (Button) findViewById(R.id.button2);
+        final Button button3 = (Button) findViewById(R.id.button3);
+        final Button button4 = (Button) findViewById(R.id.button4);
+        final Button button5 = (Button) findViewById(R.id.button5);
+        final Button button6 = (Button) findViewById(R.id.button6);
+
+        button1.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                displayToast(button1.getText());
+
+            }
+        });
+        button2.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                displayToast(button2.getText());
+
+            }
+        });
+        button3.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                displayToast(button3.getText());
+
+            }
+        });
+        button4.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                displayToast(button4.getText());
+
+            }
+        });
+        button5.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                displayToast(button5.getText());
+
+            }
+        });
+        button6.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                displayToast(button6.getText());
+
+            }
+        });
+
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -26,6 +72,11 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+    }
+
+    private void displayToast(CharSequence text) {
+        Toast.makeText(MainActivity.this, text,
+                Toast.LENGTH_SHORT).show();
     }
 
     @Override
